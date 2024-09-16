@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- favicon -->
+   <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon_package_v0.16/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_package_v0.16/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_package_v0.16/favicon-16x16.png">
+   <link rel="shortcut icon" href="./img/favicon_package_v0.16/favicon.ico" type="image/x-icon">
+   <link rel="manifest" href="./images/favicon_package_v0.16/site.webmanifest">
+   <link rel="mask-icon" href="./images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+   <link rel="shortcut icon" href="./images/favicon_package_v0.16/favicon.ico" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <title>Sparkinn Novice Solutions</title>
+    <style>
+        .list-inline p {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .list-inline p::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: #ffc400; 
+        left: 0;
+        bottom: -2px;
+        transition: width 0.3s ease;
+    }
+
+    .list-inline p:hover::after {
+        width: 100%;
+    }
+
+    /* Animation for the case study cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to case study cards */
+.card {
+    opacity: 0; /* Initially hidden */
+    animation: fadeInUp 0.6s ease forwards; /* Animation effect */
+}
+
+/* Delay animation for each card */
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+    </style>
+   
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./Index.html">
+            <h3 class="m-0 display-6 d-flex align-items-center">
+                <span class="text-primary">S</span>park
+                <span class="text-primary">I</span>NN
+                <sub class="text-muted ms-1" style="font-size: 0.7rem;">Novice Solutions</sub>
+            </h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<section class="m-4">
+    <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up">
+            <div class="col-12 col-lg-6 text-center mb-5">
+                <small class="text-primary text-uppercase font-weight-bold px-1">What we do</small>
+                <h1 class="mt-2 mb-3">We deliver cutting-edge creative solutions.</h1>
+                <h4 class="font-weight-normal text-muted mb-4">
+                    Our objective is to help professionals progress from novice to expert status through personalized coaching and hands-on experience, while also providing comprehensive solutions for businesses to implement their ideas and create ground-breaking projects.
+                    <br>Let us partner with you to launch your next groundbreaking project or jumpstart your career journey!
+                </h4>
+            </div>
+        </div>
+       </div> 
+</section>
+        
+
+            <section id="case-studies" class="container my-5">
+                <h2 class="text-center mb-4">Case Studies</h2>
+                <div class="row">
+            
+                    <!-- Case Study 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="./images/for_e_commerce_website_development.jpeg" class="card-img-top" height="250px" alt="Case Study 1">
+                            <div class="card-body">
+                                <h5 class="card-title">E-commerce Website</h5>
+                                <p class="card-text text-justify "><strong>Challenge:</strong> The client struggled with a dated website that lacked mobile responsiveness and a user-friendly interface.</p>
+                                <p class="card-text text-justify"><strong>Solution:</strong> We developed a fully responsive e-commerce website with an intuitive design, enhancing the user experience and boosting sales.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Case Study 2 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <img src="./images/different_profession.jpeg" class="card-img-top" height="250px" alt="Case Study 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Connecting Artists and Trainees</h5>
+                                    <p class="card-text text-justify "><strong>Challenge:</strong> Developing a user-friendly platform for artists to showcase skills and connect with trainees.</p>
+                                    <p class="card-text text-justify"><strong>Solution:</strong> Designed an intuitive UI with integrated messaging, feedback systems, and mobile responsiveness, resulting in a 50% increase in engagement and get positive feedback.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                    <!-- Case Study 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="./images/custom_software_development.jpeg" class="card-img-top" height="250px" alt="Case Study 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Custom Software Development</h5>
+                                <p class="card-text text-justify "><strong>Challenge:</strong> The client needed a custom software solution to streamline their operations but faced budget constraints.</p>
+                                <p class="card-text text-justify"><strong>Solution:</strong> We developed a tailored software application within budget, improving operational efficiency by 30% and ensuring scalability for future growth and get happy relation with them.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </section>
+            
+
+
+            <section class="container my-5">
+        <div class="container">
+            <div class="row">
+                <div class="row my-4">
+                    <div class="col-lg-12 my-3">
+                        <div class="row">
+                            <!-- Web Design -->
+                            <div class="col-md-12 col-lg-6 mb-5" data-aos="fade-left">
+                                <div class="card h-100 shadow-lg border-0 rounded">
+                                    <div class="card-body d-flex">
+                                        <i class="fa fa-3x fa-laptop-code text-primary "></i>
+                                        <div class="d-flex flex-column">
+                                            <h4 class="card-title font-weight-bold mb-3">Web Design</h4>
+                                        </div>
+                                    </div>
+                                    <p class="card-text px-3 pb-3">We offer web design services that transform your ideas into visually stunning, user-friendly websites. Our design approach focuses on creating experiences that not only look great but also engage and convert your audience.</p>
+            
+                                    <button class="btn btn-primary mx-3 mb-3" data-bs-toggle="modal" data-bs-target="#webDesignModal">Know More</button>
+                                </div>
+                            </div>
+            
+                            <!-- Modal for Web Design -->
+                            <div class="modal fade w-100" id="webDesignModal" tabindex="-1" aria-labelledby="webDesignModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="webDesignModalLabel">Creative Web Design That Elevates Your Brand</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- <p class="card-text"> At Sparkinn Novice Solutions, we offer web design services that transform your ideas into visually stunning, user-friendly websites. Our design approach focuses on creating experiences that not only look great but also engage and convert your audience.</p> -->
+                                            <ul>
+                                                <li><strong>Custom Website Design & Development</strong> Our team creates unique, brand-focused designs that reflect your business identity and resonate with your target audience.</li>
+                                                <li><strong>User-Centric Interfaces:</strong> We design with your users in mind, ensuring intuitive navigation, clear calls to action, and a seamless experience across all devices.</li>
+                                                <li><strong>Mobile-First & Responsive Design:</strong>: Every website we design is fully responsive, optimized for both desktop and mobile, providing a flawless experience on any screen.</li>
+                                                <li><strong>UI/UX Optimization:</strong>We focus on the perfect balance between aesthetics and functionality, creating designs that enhance user engagement and drive results.</li>
+                                                <li><strong>Brand Consistency:</strong>From color schemes to typography, we ensure that your website design is consistent with your overall brand image and voice.</li>
+                                            </ul>
+                                            <!-- <p class="card-text">Our web design process is collaborative, ensuring that every aspect of the design aligns with your business goals. Let us help you make a lasting impression with a website that stands out and drives growth.</p> -->
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Web Development -->
+                            <div class="col-md-12 col-lg-6 mb-5" data-aos="fade-left">
+                                <div class="card h-100 shadow-lg border-0 rounded">
+                                    <div class="card-body d-flex">
+                                        <i class="fa fa-3x fa-code text-primary "></i>
+                                        <div class="d-flex flex-column">
+                                            <h4 class="card-title font-weight-bold mb-3">Web Development</h4>
+                                        </div>
+                                    </div>
+                                    <p class="card-text px-3 pb-3">At Sparkinn Novice Solutions, we specialize in delivering custom web development solutions that drive your business forward. Whether you're launching a new site or revamping an existing one, our team of expert developers is here to bring your vision to life.</p>
+                                    <!-- Know More Button -->
+                                    <button class="btn btn-primary mx-3 mb-3" data-bs-toggle="modal" data-bs-target="#webDevelopmentModal">Know More</button>
+                                </div>
+                            </div>
+            
+                            <!-- Modal for Web Development -->
+                            <div class="modal fade" id="webDevelopmentModal" tabindex="-1" aria-labelledby="webDevelopmentModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="webDevelopmentModalLabel">Web Development Services Tailored to Your Needs</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li><strong>Custom Website Design & Development: </strong>From sleek and responsive designs to powerful back-end systems, we build websites that are not only visually appealing but also highly functional.</li>
+                                                <li><strong>E-commerce Solutions: </strong> We create secure, scalable online stores to help you grow your business and deliver a seamless shopping experience to your customers.</li>
+                                                <li><strong>CMS Integration: </strong>We empower you with easy-to-use content management systems, allowing you to manage and update your website effortlessly.</li>
+                                                <li><strong>Responsive and Mobile-First Development:</strong>Our websites are designed to perform optimally on any device, ensuring your users have a flawless experience across platforms.</li>
+                                                <li><strong>Ongoing Support & Maintenance: </strong>We provide continuous support, updates, and improvements to keep your website running smoothly and efficiently.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Repeat similar blocks for Data Analysis & Preparation, Digital Marketing, UI/UX Design, Content Writing -->
+                            <!-- Data Analysis & Preparation -->
+                            <div class="col-md-12 col-lg-6 mb-5" data-aos="fade-left">
+                                <div class="card h-100 shadow-lg border-0 rounded">
+                                    <div class="card-body d-flex">
+                                        <i class="fa fa-3x fa-envelope-open-text text-primary "></i>
+                                        <div class="d-flex flex-column">
+                                            <h4 class="card-title font-weight-bold mb-3">Data Analysis & Preparation</h4>
+                                        </div>
+                                    </div>
+                                    <p class="card-text px-3 pb-3">At Sparkinn Novice Solutions, we help businesses unlock the full potential of their data through comprehensive data analysis and preparation services. Our goal is to transform raw data into actionable insights that drive smarter decisions and strategic growth.</p>
+                                    <!-- Know More Button -->
+                                    <button class="btn btn-primary mx-3 mb-3" data-bs-toggle="modal" data-bs-target="#dataAnalysisModal">Know More</button>
+                                </div>
+                            </div>
+            
+                            <!-- Modal for Data Analysis & Preparation -->
+                            <div class="modal fade" id="dataAnalysisModal" tabindex="-1" aria-labelledby="dataAnalysisModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="dataAnalysisModalLabel">Data Analysis & Preparation - What We Offer</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li><strong>Data Cleaning and Transformation</strong>We clean, organize, and structure your data, ensuring it's accurate, reliable, and ready for analysis.</li>
+                                                <li><strong>Data Integration</strong>Combining data from multiple sources, we create a unified dataset that gives you a complete view of your business operations.</li>
+                                                <li><strong>Advanced Data Analysis</strong>Using the latest tools and techniques, we analyze your data to uncover trends, patterns, and insights that support informed decision-making.</li>
+                                                <li><strong>Custom Dashboards & Reporting</strong>We design tailored dashboards and reports that present your data in a clear, digestible format, allowing you to monitor KPIs and business metrics in real time.</li>
+                                                <li><strong>Predictive Analytics</strong>Leveraging data models, we provide forecasts and predictive insights that help you stay ahead of market trends and make proactive business moves.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Repeat for other cards (Digital Marketing, UI/UX Design, Content Writing) -->
+
+                            <div class="col-md-12 col-lg-6 mb-5" data-aos="fade-left">
+                                <div class="card h-100 shadow-lg border-0 rounded">
+                                    <div class="card-body d-flex">
+                                        <i class="fa fa-3x fa-envelope-open-text text-primary "></i>
+                                        <div class="d-flex flex-column">
+                                            <h4 class="card-title font-weight-bold mb-3">Digital Marketing</h4>
+                                        </div>
+                                    </div>
+                                    <p class="card-text px-3 pb-3">At Sparkinn Novice Solutions, we understand that in today's digital landscape, a strong online presence is essential for success. Our comprehensive digital marketing services are designed to help you reach your target audience effectively and drive measurable results.</p>
+                                    <!-- Know More Button -->
+                                    <button class="btn btn-primary mx-3 mb-3" data-bs-toggle="modal" data-bs-target="#DigitalMarketingModal">Know More</button>
+                                </div>
+                            </div>
+            
+                            <!-- Modal for Data Analysis & Preparation -->
+                            <div class="modal fade" id="DigitalMarketingModal" tabindex="-1" aria-labelledby="DigitalMarketingModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="DigitalMarketingModalLabel">Digital Marketing Services Tailored for Your Growth</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li><strong>Search Engine Optimization (SEO)</strong> We optimize your website to boost search engine visibility, drive organic traffic, and attract potential customers searching for your products or services.</li>
+                                                <li><strong>Pay-Per-Click Advertising (PPC)</strong>Our targeted PPC campaigns put your ads in front of the right audience at the right time, maximizing ROI and driving qualified leads to your business.</li>
+                                                <li><strong>Social Media Marketing</strong> We create and manage social media campaigns that build brand awareness, foster loyalty, and drive website traffic. Our team tailors content for each platform to ensure maximum engagement.</li>
+                                                <li><strong>Content Marketing</strong>Our content marketing strategy delivers valuable, relevant content that resonates with your audience. From blog posts to infographics, we create content that drives traffic, engages users, and establishes your brand as an industry authority.</li>
+                                                <li><strong>Analytics and Reporting</strong>We offer in-depth analytics and reporting to track your digital marketing performance. Our data-driven approach helps refine strategies and optimize campaigns for better results.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12 col-lg-6 mb-5" data-aos="fade-left">
+                                <div class="card h-100 shadow-lg border-0 rounded">
+                                    <div class="card-body d-flex">
+                                        <i class="fa fa-3x fa-envelope-open-text text-primary "></i>
+                                        <div class="d-flex flex-column">
+                                            <h4 class="card-title font-weight-bold mb-3">UI/UX Design</h4>
+                                        </div>
+                                    </div>
+                                    <p class="card-text px-3 pb-3">We believe that great design is the foundation of any successful digital product. Our UI/UX design services are focused on building interfaces that are intuitive, engaging, and visually attractive, thereby improving user experiences and driving happiness.</p>
+                                    <!-- Know More Button -->
+                                    <button class="btn btn-primary mx-3 mb-3" data-bs-toggle="modal" data-bs-target="#UI-UXDesignModal">Know More</button>
+                                </div>
+                            </div>
+            
+                            <!-- Modal for Data Analysis & Preparation -->
+                            <div class="modal fade" id="UI-UXDesignModal" tabindex="-1" aria-labelledby="UI-UXDesignModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="UI-UXDesignModalLabel">UI/UX Design Services Crafted for Exceptional User Experiences</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li><strong>Wireframing and Prototyping</strong> We create wireframes and prototypes to visualize the user journey, enabling feedback and iterative improvements.</li>
+                                                <li><strong>User Research and Analysis</strong>We conduct thorough user research to understand your audience’s needs and behaviors, using these insights to guide our design process.</li>
+                                                <li><strong>Visual Design</strong>We craft visually appealing designs that align with your brand identity. Our designers focus on aesthetics, color schemes, typography, and imagery to create an attractive interface that captivates users.</li>
+                                                <li><strong>Responsive Design</strong>We ensure that your digital product provides a seamless experience across all devices. Our responsive designs adapt to various screen sizes and orientations, guaranteeing usability and functionality.</li>
+                                                <li><strong>Usability Testing</strong>We conduct usability testing to evaluate the effectiveness of our designs. By observing real users, we gather valuable feedback and make data-driven adjustments to enhance the overall user experience.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-12 col-lg-6 mb-5" data-aos="fade-left">
+                                <div class="card h-100 shadow-lg border-0 rounded">
+                                    <div class="card-body d-flex">
+                                        <i class="fa fa-3x fa-envelope-open-text text-primary "></i>
+                                        <div class="d-flex flex-column">
+                                            <h4 class="card-title font-weight-bold mb-3">Content Writing</h4>
+                                        </div>
+                                    </div>
+                                    <p class="card-text px-3 pb-3">At Sparkinn Novice Solutions, we understand the power of words in shaping your brand's identity and message. Our content writing services focus on creating compelling, engaging, and SEO-friendly content that resonates with your audience and drives meaningful engagement.</p>
+                                    <!-- Know More Button -->
+                                    <button class="btn btn-primary mx-3 mb-3" data-bs-toggle="modal" data-bs-target="#ContentWritingModal">Know More</button>
+                                </div>
+                            </div>
+            
+                            <!-- Modal for Data Analysis & Preparation -->
+                            <div class="modal fade" id="ContentWritingModal" tabindex="-1" aria-labelledby="ContentWritingModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="ContentWritingModalLabel">UI/UX Design Services Crafted for Exceptional User Experiences</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li><strong>SEO Content Writing</strong> We craft keyword-optimized content designed to rank higher on search engines, driving organic traffic and boosting your online visibility. Our content is not only search-engine-friendly but also user-focused, ensuring a balance between technical SEO and readability.</li>
+                                                <li><strong>Blog Writing</strong>We produce informative and engaging blog posts that showcase your expertise, build brand awareness, and establish thought leadership in your industry. Our content is tailored to your audience’s interests and designed to spark conversation.</li>
+                                                <li><strong>Website Copywriting</strong>Our team delivers clear, concise, and compelling website copy that aligns with your brand’s voice and drives conversions. Whether it’s your homepage, product pages, or landing pages, we create content that guides users through their journey and encourages action.</li>
+                                                <li><strong>Social Media Content</strong>We create captivating social media content that fosters engagement, promotes brand visibility, and builds strong connections with your audience. Our social media copy is crafted to suit each platform, ensuring the right tone and style for your brand.</li>
+                                                <li><strong>Product Descriptions</strong>Our product descriptions highlight the key features and benefits of your offerings, written in a way that entices customers and improves the likelihood of purchase. We create compelling narratives that resonate with your target market.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div> 
+           </section>
+
+
+
+
+
+
+    <footer class="footer-section">
+        <!-- Website Name -->
+        <div>
+            <h2 class="footer-title">sparkinnsolution.com</h2>
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="footer-links">
+            <a href="home.html">HOME</a>
+            <a href="service.html">SERVICE</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+        
+        <!-- Social Media Icons -->
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://wa.me/" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+        </div>
+        
+        <!-- Copyright Information -->
+        <div class="footer-copyright">
+            <small>
+                <i class="bi bi-c-circle"></i> All rights reserved by SparkInn Novice Solutions Pvt Ltd
+            </small>
+        </div>
+    </footer>
+    
+    <!-- Add Bootstrap Icons CDN if not already included -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
